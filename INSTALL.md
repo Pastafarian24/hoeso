@@ -31,4 +31,34 @@ git clone https://github.com/hoeso/hoeso.git public_html
 
 This way you can simply create a new user whenever you start a new project and have everything neatly separated.
 
+## MariaDB configuration (recommended)
+
+We want to allow users to be able to make administrative changes to the database. The following steps are necessary for this:
+
+As root:
+```
+systemctl stop mariadb
+mysqld_safe --skip-grant-tables --skip-networking &
+```
+
+Then as regular user:
+```
+mariadb -uroot
+MariaDB [(none)]>  select user,host,password,plugin from mysql.user;
+MariaDB [(none)]>  update mysql.user set plugin='' where user='root';
+MariaDB [(none)]>  FLUSH PRIVILEGES;
+MariaDB [(none)]>  quit;
+```
+
+Then again as root:
+```
+mysqladmin shutdown
+systemctl start mariadb
+mysqladmin password
+```
+Now you should be able to log in to the MariaDB as a regular user with the command
+```
+mariadb -u root -p
+```
+
 
