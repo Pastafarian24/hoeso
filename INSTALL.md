@@ -22,7 +22,7 @@
 
 We recommend creating a new user for this project and enabling [UserDirectory](https://wiki.ubuntu.com/UserDirectoryPHP) so you can access it through your browser via http://localhost/~USERNAME/
 
-You can then clone the GitHub repository into the Document root of that user (WARNING: everything already in that directory will be overwritten by these commands!):
+You can then clone the GitHub repository into the Document root of that user:
 ```
 cd ~
 mkdir ~/public_html
