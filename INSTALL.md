@@ -71,7 +71,9 @@ mariadb -uroot -p mysql < db/createUser.sql
 ```
 To access the database "office" as the database user "hfs", we will create a system user called "hfs":
 ```
+su -
 adduser hfs
+su hfs
 ```
 Now the system user "hfs" can log in to the database "office" without having to enter a password:
 
