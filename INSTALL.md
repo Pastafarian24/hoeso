@@ -10,7 +10,7 @@
 - [Set up a Webserver, Database, PHP and create a database user for the project](https://www.cyberciti.biz/faq/how-to-install-lamp-on-debian-10-buster/) 
 - Clone the project from Github to where your Webserver can access it:
 
-`git clone https://github.com/hoeso/hoeso.git`
+`git clone https://github.com/hoeso/hoeso.git .`
 
 ## Windows:
 - [Download and install XAMPP](https://www.apachefriends.org/download.html)
@@ -22,11 +22,12 @@
 
 We recommend creating a new user for this project and enabling [UserDirectory](https://wiki.ubuntu.com/UserDirectoryPHP) so you can access it through your browser via http://localhost/~USERNAME/hoeso
 
-You can then clone the GitHub repository into the Document root of that user:
+You can then clone the GitHub repository into the Document root of that user (WARNING: everything already in that directory will be overwritten by these commands!):
 ```
 mkdir ~/public_html
 cd ~/public_html
-git clone https://github.com/hoeso/hoeso.git
+rm -rf *
+git clone https://github.com/hoeso/hoeso.git .
 ```
 
 This way you can simply create a new user whenever you start a new project and have everything neatly separated.
