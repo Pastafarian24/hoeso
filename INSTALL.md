@@ -10,7 +10,7 @@
 - Set up a Webserver, Database, PHP and create a database user for the project, for example by following [these instructions](https://www.cyberciti.biz/faq/how-to-install-lamp-on-debian-10-buster/) 
 - Clone the project from Github to where your Webserver can access it:
 
-`git clone https://github.com/hoeso/hoeso.git public_html`
+`git clone https://github.com/hoeso/hoeso.git ~public_html`
 
 ## Windows:
 - [Download and install XAMPP](https://www.apachefriends.org/download.html)
