@@ -59,4 +59,4 @@ Insert the following lines under `$enumListe=array (`:
  "Station"=>"ar",// tld
 ```
 
-# We should now be able to see the newly created entity and menu item in our browser at [http://localhost/~hfs/](http://localhost/~hfs/)
+We should now be able to see the newly created entity and menu item in our browser at [http://localhost/~hfs/](http://localhost/~hfs/)
