@@ -31,7 +31,7 @@ Insert the following lines
 </li>
 </ul>
 ```
-## Step 4: Add a navigation item in continueHere.prj:
+## Step 3: Add a navigation item in continueHere.prj:
 
 ```
 nano ~/public_html/continueHere.prj
@@ -48,9 +48,9 @@ And insert the following lines under `$candyURL = array(`:
 "Test"=>"mn.php?mn=pe&a=Test&u=Test",
 ```
 
-## Step 3:
+## Step 4: Since we created the table using an "enum" field, we need to declare it in our select.prj as well:
 
-Since we created the table using an "enum" field, we need to declare it in our select.prj as well:
+
 ```
 nano ~/public_html/select.prj
 ```
