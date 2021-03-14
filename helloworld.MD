@@ -36,16 +36,14 @@ Insert the following lines
 ```
 nano ~/public_html/continueHere.prj
 ```
-Insert the following lines under`_eCandy = array(`:
+Insert the following line under`_eCandy = array(`:
 ```
 "Station"=>"0",
-"Test"=>"0",
-);
+
 ```
-And insert the following lines under `$candyURL = array(`:
+And insert the following line under `$candyURL = array(`:
 ```
 "Station"=>"mn.php?mn=pe&a=Station&u=Test-Location",
-"Test"=>"mn.php?mn=pe&a=Test&u=Test",
 ```
 
 ## Step 4: Since we created the table using an "enum" field, we need to declare it in our select.prj as well:
